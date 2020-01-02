@@ -1,0 +1,323 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0%;
+    z-index: 90;
+}
+
+h4 {
+    text-align: center;
+}
+
+/*ANIMATIONS*/
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes reverse-spinner {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    } 
+}
+
+@keyframes transform {
+    0% {
+        transform: scale(0.85);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.transformer{
+    animation-name: transform;
+    animation-duration: 350ms;
+}
+
+.unspin{
+    animation-name: reverse-spinner;
+    animation-duration: 500ms;
+}
+
+.spin{
+    animation-name: spinner;
+    animation-duration: 500ms;
+}
+
+.fade{
+    animation-name: fade-in;
+    animation-duration: 500ms;
+}
+
+.animate-up {
+    animation-name: slide-up;
+    animation-duration: 350ms;
+}
+
+.animate-down {
+    animation-name: slide-down;
+    animation-duration: 200ms;
+}
+
+.header {
+    z-index: 100;
+    background-color: #2496EF;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+}
+
+.headerbtn {
+    padding-left: 0px 10px 0px 10px;
+    width: 24%;
+    height: 100%;
+    background-color: #2496EF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.headerbtn:hover {
+    background-color: white;
+    color: #2496EF;
+}
+
+.headerlink {
+    color: white;
+}
+
+.logo-container,
+.placeholder-container {   
+    text-align: center;
+}
+
+.logo {
+    overflow: hidden;
+    padding: 2% 2% 2% 2%;
+    margin: 35px 2% 0% 2%;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    width: 90%;
+    min-height: 180px;
+    border-radius: 3px;
+    border: 1px solid #ecebeb;
+}
+
+.stickynavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#mylogo {
+    display: none;
+    width: 55%;
+    height: 50%;
+    border: none;
+    border-radius: 100px;
+}
+
+#avatar {
+    width: 55%;
+    height: 50%;
+    border: none;
+    border-radius: 100px
+}
+
+#ray {
+    color: #2496EF;
+}
+
+.ray {
+    color: #2496EF;
+}
+
+.intro{
+    color: #3f4142;
+}
+
+.placeholderr {
+    padding-top: 2%;
+    display: inline-block;
+    background-color: white;
+    width: 95%;
+    border-radius: 3px;
+    box-shadow: 0 7px 30px -20px #aaafb3;
+    border: 1px solid #ecebeb;
+}
+
+.listing {
+    text-align: left;
+}
+
+.skills {
+    color: rgb(0, 123, 160);
+}
+
+.projects{
+   color: #009cb8;
+   padding: 1% 0% 2% 0% ;
+}
+
+.card {
+    margin: 5% 2% 5% 2%;
+    padding: 5% 0% 5% 0%;
+    display: inline-block;
+    background-color: white;
+    width: 95%;
+    border-radius: 3px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 25, 50, 0.05);
+    border: 1px solid #ecebeb;
+}
+
+#ark, #orion, #jbs{
+    width: 90%;
+    height: 90%;
+}
+
+.project-desc{
+    color: #3f4142;
+    margin: 2%;
+}
+
+.view{
+    height: 35px;
+    width: 70px;
+    background-color: white;   
+    font-size: 16px;
+    margin: 8px 0px 5px 0px;    
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.ark{
+    color: #00706e;
+    border-color: #00706e;
+}
+
+.orion{
+    color: #009cb8;
+    border-color: #009cb8;
+}
+
+.downloadbtn{
+    height: 35px;
+    width: 90px;
+    color: #2496EF;
+    border-color: #2496EF;
+    background-color: white;   
+    font-size: 16px;
+    margin: 8px 0px 5px 0px;    
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.footer{
+    color: black;
+    display: inline-block;
+    background-color: white;
+    width: 100%; 
+    height: 200px;
+    text-align: center;
+    margin: 0%;      
+}   
+
+.contact-details{
+    width: 100%;
+    padding: 0%;
+}
+
+table tr td a {
+    color: #2496EF;
+}
+
+.footer ul li{
+    margin: 10px;    
+    color: black;
+}
+
+.footer ul li a{
+    color: #2496EF;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+}
+tr{
+    height: 20px;
+    padding: 1%;
+    margin: 3%;
+}
