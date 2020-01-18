@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="icon" href="media/images/circularicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script>
     </head>
 
     <body>
@@ -38,7 +39,7 @@
                             <h2 id="ray">Rayton Burrell</h2>
                             <p class="intro">Hey there, I'm Rayton. <br>
                                 An aspiring software/website developer and this is my first attempt
-                                at a personal website.  <br>                                
+                                at a personal website. <br>
                             </p>
                         </div>
 
@@ -50,10 +51,9 @@
                             <h3 class="skills">Interests</h4>
                                 <ul type="square" class="listing skills">
                                     <li>Web & Application Developement</li>
+                                    <li>C# | SQL | HTML | CSS | Javascript</li>
                                     <li>Photography</li>
                                     <li>Video & Image Editing</li>
-                                    <li>Food</li>                                   
-                                    <li>C# | SQL | HTML | CSS | Javascript</li>                                   
                                 </ul>
                         </div>
                         <div id="projects" class="card projects">
@@ -107,14 +107,27 @@
                 </div>
             </div>
         </div>
-        <div id="contact" class="footer">
+        <div id="contact" class="footer animate-up">
             <ul class="contact-details" type="none">
                 <li>Github: <a href="https:/github.com/BurRay">BurRay </a></li>
-                <li>Email: <a href="mailto: example@email.com">Rayton Burrell</a></li>                
+                <li>Email: <a href="mailto: example@email.com">Rayton Burrell</a></li>
                 <li>&copy 2019 Rayton Burrell</li>
                 <li><img src="media/images/logo2.png" width="20" height="20" alt=""></li>
             </ul>
         </div>
         <script src="jscript/jscipt.js"></script>
+        <script>
+            $(window).bind('scroll', function () {
+                if ($(window).scrollTop() >= $('#resume').offset().top + $('#resume').outerHeight() - window.innerHeight) {
+                    $("#contact").addClass("show-footer");
+                }
+                else {
+                    $("#contact").removeClass("show-footer");
+                }
+            });
+
+
+        </script>
     </body>
+
 </html>

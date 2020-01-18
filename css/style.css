@@ -22,7 +22,7 @@ h4 {
     text-align: center;
 }
 
-button{
+button {
     padding: 0%;
 }
 
@@ -85,7 +85,7 @@ button{
     100% {
         display: block;
         opacity: 1;
-    } 
+    }
 }
 
 @keyframes transform {
@@ -98,22 +98,22 @@ button{
     }
 }
 
-.transformer{
+.transformer {
     animation-name: transform;
     animation-duration: 350ms;
 }
 
-.unspin{
+.unspin {
     animation-name: reverse-spinner;
     animation-duration: 500ms;
 }
 
-.spin{
+.spin {
     animation-name: spinner;
     animation-duration: 500ms;
 }
 
-.fade{
+.fade {
     animation-name: fade-in;
     animation-duration: 500ms;
 }
@@ -156,8 +156,9 @@ button{
     color: white;
 }
 
+
 .logo-container,
-.placeholder-container {   
+.placeholder-container {
     text-align: center;
 }
 
@@ -204,7 +205,7 @@ button{
     color: #2496EF;
 }
 
-.intro{
+.intro {
     color: #3f4142;
 }
 
@@ -226,9 +227,9 @@ button{
     color: rgb(0, 123, 160);
 }
 
-.projects{
-   color: #009cb8;
-   padding: 1% 0% 2% 0% ;
+.projects {
+    color: #009cb8;
+    padding: 1% 0% 2% 0%;
 }
 
 .card {
@@ -242,63 +243,78 @@ button{
     border: 1px solid #ecebeb;
 }
 
-#ark, #orion, #jbs{
+#ark,
+#orion,
+#jbs {
     width: 90%;
     height: 90%;
 }
 
-.project-desc{
+#resume{
+    margin-bottom: 230px;
+}
+
+.project-desc {
     color: #3f4142;
     margin: 2%;
 }
 
-.view{
+.view {
     height: 35px;
     width: 70px;
-    background-color: white;   
+    background-color: white;
     font-size: 16px;
-    margin: 8px 0px 5px 0px;    
+    margin: 8px 0px 5px 0px;
     border-width: 1px;
     border-style: solid;
     border-radius: 3px;
     padding: 0;
 }
 
-.ark{
+.ark {
     color: #00706e;
     border-color: #00706e;
 }
 
-.orion{
+.orion {
     color: #009cb8;
     border-color: #009cb8;
 }
 
-.downloadbtn{
+.downloadbtn {
     height: 35px;
     width: 90px;
     color: #2496EF;
     border-color: #2496EF;
-    background-color: white;   
+    background-color: white;
     font-size: 16px;
-    margin: 8px 0px 5px 0px;    
+    margin: 8px 0px 5px 0px;
     border-width: 1px;
     border-style: solid;
     border-radius: 3px;
     padding: 0;
 }
 
-.footer{
+.footer {
+    visibility: hidden;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+    mmargin: 5% 2% 0% 2%;
     color: black;
     display: inline-block;
     background-color: white;
-    width: 100%; 
+    width: 100%;
     height: 200px;
     text-align: center;
-    margin: 0%;      
-}   
+    mmargin: 0%;
+}
 
-.contact-details{
+.show-footer{
+    visibility: visible;
+}
+
+.contact-details {
     width: 100%;
     padding: 0%;
 }
@@ -307,29 +323,30 @@ table tr td a {
     color: #2496EF;
 }
 
-.footer ul li{
-    margin: 10px;    
+.footer ul li {
+    margin: 10px;
     color: black;
 }
 
-.footer ul li a{
+.footer ul li a {
     color: #2496EF;
 }
 
-table{
+table {
     width: 100%;
     text-align: center;
 }
-tr{
+
+tr {
     height: 20px;
     padding: 1%;
     margin: 3%;
 }
 
-#projects img{
+#projects img {
     filter: brightness(40%);
 }
 
-#projects img:hover{
+#projects img:hover {
     filter: brightness(100%);
 }
