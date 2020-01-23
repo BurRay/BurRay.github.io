@@ -25,9 +25,9 @@
                 <a href="#resume" class="headerlink">
                     <button class="headerbtn">Resume</button>
                 </a>
-                <a href="#contact" class="headerlink">
-                    <button class="headerbtn">Contact</button>
-                </a>
+                <!-- <a class="headerlink"> -->
+                    <button id="cont" class="headerbtn">Contact</button>
+                <!-- </a> -->
             </nav>
             <div class="site-body">
                 <a id="home"></a>
@@ -93,15 +93,12 @@
                         </div>
                         <div id="resume" class="card">
                             <h3 class="ray">Resume</h3>
-                            <div class="project-desc">
-                                <p>
-                                    I plan on putting a link to my resume here one day. In the
-                                    meantime though, here's an error 404 image and a download button
-                                    that doesn't work. Enjoy!
-                                </p>
-                                <img src="media/images/error404.png" width="90%" height="90%" alt="">
+                            <div class="project-desc">                               
+                                <img id="res" src="media/images/resume.png" width="95%" height="90%" alt="">
                             </div>
+                            <a href="https://1drv.ms/b/s!Amb6bu9IfOh9gaZLrQN0iJ0WOh-Lxw?e=zaKqoD">
                             <button class="downloadbtn">Download</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -115,19 +112,8 @@
                 <li><img src="media/images/logo2.png" width="20" height="20" alt=""></li>
             </ul>
         </div>
-        <script src="jscript/jscipt.js"></script>
-        <script>
-            $(window).bind('scroll', function () {
-                if ($(window).scrollTop() >= $('#resume').offset().top + $('#resume').outerHeight() - window.innerHeight) {
-                    $("#contact").addClass("show-footer");
-                }
-                else {
-                    $("#contact").removeClass("show-footer");
-                }
-            });
-
-
-        </script>
+        <script src="jscript/jscipt.js"></script>    
+        <!-- <script src="jscript/jquery.js"></script>     -->
     </body>
 
 </html>
