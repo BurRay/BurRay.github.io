@@ -32,9 +32,11 @@
             <div class="site-body">
                 <a id="home"></a>
                 <div class="logo-container" id="logo-container">
-                    <div class="logo">
-                        <img id="mylogo" class="logo animate-up" src="media/images/logo.png" alt="Logo">
-                        <img id="avatar" class="logo animate-down" src="media/images/circularavatar.png" alt="Logo">
+                    <div class="logo-inner">
+                        <div class="logo">
+                            <img id="mylogo" class="logo animate-up" src="media/images/logo.png" alt="Logo">
+                            <img id="avatar" class="logo animate-down" src="media/images/circularavatar.png" alt="Logo">
+                        </div>
                         <div class="description">
                             <h2 id="ray">Rayton Burrell</h2>
                             <p class="intro">Hey there, I'm Rayton. <br>
@@ -42,64 +44,69 @@
                                 at a personal website. <br>
                             </p>
                         </div>
-
                     </div>
                 </div>
                 <div class="placeholder-container">
                     <div class="placeholder">
                         <div id="about" class="card">
                             <h3 class="skills">Interests</h4>
-                                <ul type="square" class="listing skills">
+                                <ul type="disc" class="listing skills">
                                     <li>Web & Application Developement</li>
                                     <li>C# | SQL | HTML | CSS | Javascript</li>
                                     <li>Photography</li>
                                     <li>Video & Image Editing</li>
                                 </ul>
                         </div>
-                        <div id="projects" class="card projects">
+                        <div id="projects" class="card">
                             <h3>Projects</h3>
-                            <h4 class="ark">Online Gaming Store</h4>
-                            <div class="ark">
-                                <img id="ark" src="media/images/ark.png" alt="ARK Website">
-                                <div class="project-desc">
-                                    <p>Created using ASP.Net to demonstrate client and server side processing</p>
+
+                            <div class="projects">
+
+                                <div class="inner-card">
+                                    <h4 class="ark">Online Gaming Store</h4>
+                                    <div class="ark">
+                                        <img id="ark" src="media/images/ark.png" alt="ARK Website">
+                                        <div class="project-desc">
+                                            <p>Created using ASP.Net to demonstrate client and server side processing
+                                            </p>
+                                        </div>
+                                        <button class="view ark">View</button>
+                                    </div>
                                 </div>
-                                <button class="view ark">View</button>
-                                <br>
-                                <br>
-                                <br>
 
-                                <h4 class="orion">Orion's Institute</h4>
-                                <img id="orion" src="media/images/orion.png" alt="Orion Website">
+                                <div class="inner-card">
+                                    <h4 class="orion">Orion's Institute</h4>
+                                    <img id="orion" src="media/images/orion.png" alt="Orion Website">
 
-                                <div class="project-desc">
-                                    <p>Highly interactive school website created using HTML | CSS | Javascript to stress
-                                        us out</p>
+                                    <div class="project-desc">
+                                        <p>Highly interactive school website created using HTML | CSS | Javascript to
+                                            stress
+                                            us out</p>
+                                    </div>
+                                    <button class="view orion">View</button>
                                 </div>
-                                <button class="view orion">View</button>
-                                <br>
-                                <br>
-                                <br>
 
-                                <h4 class="jbs">Utility Billing Application</h4>
-                                <img id="jbs" src="media/images/jbs.png" alt="Billing Application">
+                                <div class="inner-card">
+                                    <h4 class="jbs">Utility Billing Application</h4>
+                                    <img id="jbs" src="media/images/jbs.png" alt="Billing Application">
 
-                                <div class="project-desc">
-                                    <p>Interactive Windows form application designed to calculate,
-                                        store, and display utility bills, I think.</p>
+                                    <div class="project-desc">
+                                        <p>Interactive Windows form application designed to calculate,
+                                            store, and display utility bills, I think.</p>
+                                    </div>
+                                    <button class="view orion">View</button>
                                 </div>
-                                <button class="view orion">View</button>
                             </div>
                         </div>
-                        <div id="resume" class="card">
-                            <h3 class="ray">Resume</h3>
-                            <div class="project-desc">                               
-                                <img id="res" src="media/images/resume.png" width="95%" height="90%" alt="">
-                            </div>
-                            <a href="https://1drv.ms/b/s!Amb6bu9IfOh9gaZLrQN0iJ0WOh-Lxw?e=zaKqoD" target="_blank">
+                    </div>
+                    <div id="resume" class="card">
+                        <h3 class="ray">Resume</h3>
+                        <div class="project-desc">
+                            <img id="res" src="media/images/resume.png" width="95%" height="90%" alt="">
+                        </div>
+                        <a href="https://1drv.ms/b/s!Amb6bu9IfOh9gaZLrQN0iJ0WOh-Lxw?e=zaKqoD" target="_blank">
                             <button class="downloadbtn">Download</button>
-                            </a>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -112,7 +119,7 @@
                 <li><img src="media/images/logo.png" width="20" height="20" alt=""></li>
             </ul>
         </div>
-        <script src="jscript/jscipt.js"></script>    
+        <script src="jscript/jscipt.js"></script>
         <!-- <script src="jscript/jquery.js"></script>     -->
     </body>
 
