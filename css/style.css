@@ -150,6 +150,8 @@ button {
 .headerbtn:hover {
     background-color: white;
     color: #2496EF;
+    animation-name: fade-in;
+    animation-duration: 500ms;
 }
 
 .headerlink {
@@ -160,15 +162,18 @@ button {
     text-align: center;
 }
 
+.logo-container{
+    margin: 0% 2% 5% 2%;
+    width: 95%;
+}
 
 .logo-inner {
-    overflow: hidden;
-    padding: 5% 2% 0% 2%;
-    margin: 70px 2% 0% 2%;
+    overflow: hidden;    
+    margin-top: 70px;
+    padding: 5% 1% 5% 1%;
     display: inline-block;
     text-align: center;
-    background-color: white;
-    width: 90%;
+    background-color: white; 
     min-height: 180px;
     border-radius: 3px;
     border: 1px solid #ecebeb;
