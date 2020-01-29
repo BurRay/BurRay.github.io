@@ -13,11 +13,13 @@ a {
     text-decoration: none;
 }
 
-h2 {
+h1, h2, h3 {
+    text-align: center;
     margin: 0%;
     z-index: 90;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 3%;
 }
-
 h4 {
     text-align: center;
 }
@@ -163,8 +165,8 @@ button {
 }
 
 .logo-container{
-    margin: 0% 2% 5% 2%;
-    width: 95%;
+    background-color: white;
+    width: 100%;
 }
 
 .logo-inner {
@@ -172,13 +174,13 @@ button {
     margin-top: 70px;
     padding: 5% 1% 5% 1%;
     display: inline-block;
-    text-align: center;
-    background-color: white; 
-    min-height: 180px;
-    border-radius: 3px;
-    border: 1px solid #ecebeb;
+    text-align: center;    
+    min-height: 180px;    
 }
 
+#about{
+    background-color: whitesmoke;
+}
 
 .stickynavbar {
     position: fixed;
@@ -214,14 +216,11 @@ button {
     color: #3f4142;
 }
 
-.placeholderr {
+.placeholder {
+    background-color: #e9f1f2;
     padding-top: 2%;
-    display: inline-block;
-    background-color: white;
-    width: 95%;
-    border-radius: 3px;
-    box-shadow: 0 7px 30px -20px #aaafb3;
-    border: 1px solid #ecebeb;
+    display: inline-block;    
+    width: 100%;    
 }
 
 .listing {
@@ -250,14 +249,10 @@ button {
 .card {
     margin: 5% 2% 5% 2%;
     padding: 5% 0% 5% 0%;
-    display: inline-block;
-    background-color: white;
+    display: inline-block;    
     width: 95%;
     z-index: 5;
-    border-radius: 3px;
-    box-shadow: 0px 10px 20px 0px rgba(0, 25, 50, 0.05);
-    border: 1px solid #ecebeb;
-}
+}   
 
 #ark,
 #orion,
@@ -267,9 +262,10 @@ button {
     height: 90%;
 }
 
-#resume {
-    mmargin-bottom: 230px;
+#resume {   
+    padding: 1%;
     z-index: 10;
+    background-color: white;
 }
 
 .project-desc {
@@ -313,14 +309,10 @@ button {
     padding: 0;
 }
 
-.footer {
-    vvisibility: hidden;
-    bottom: 0;
-    pposition: fixed;
-    mmargin: 5% 2% 0% 2%;
-    color: black;
+.footer {    
+    color: white;
     display: inline-block;
-    background-color: white;
+    background-color: black;    
     width: 100%;
     height: 200px;
     text-align: center;
@@ -332,7 +324,7 @@ button {
 
 .contact-details {
     width: 100%;
-    padding: 0%;
+    padding: 0%;   
 }
 
 table tr td a {
@@ -341,7 +333,7 @@ table tr td a {
 
 .footer ul li {
     margin: 10px;
-    color: black;
+    color: white;
 }
 
 .footer ul li a {

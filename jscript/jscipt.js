@@ -17,13 +17,14 @@ function Sticknavbar()
 //object.addEventListener ("scroll", onScrollHandler);
 
 window.onscroll = function () {
-    this.SwitchToAvatar();
+    //this.SwitchToAvatar();
 }
 
 
 window.onclick=function()  
 {
-    this.SwitchToLogo();   
+    //this.SwitchToLogo();
+    this.SwitchToAvatar();   
 };
 
 
@@ -33,13 +34,27 @@ function SwitchToAvatar() {
     var mylogo = document.getElementById("mylogo");
     var myavatar = document.getElementById("avatar");
 
+    if (myavatar.style.display == "inline-block") {
+        myavatar.style.display = "none";
+        mylogo.style.display = "inline-block";
+       // alert("avatar");
+    } else {
+        myavatar.style.display = "inline-block";
+        mylogo.style.display = "none";
+       // alert("logo");
+    }
+
+
 
     // scrollPosition is 0 at the top of the page
     // it contains how many pixels have been scrolled down
-    if (scrollPosition = 0) {
+   /* if (scrollPosition > 0) {
         myavatar.style.display = "inline-block";
-        mylogo.style.display ="none";
-    } 
+        mylogo.style.display = "none";
+    } else {
+        myavatar.style.display = "none";
+        mylogo.style.display = "inline-block";
+    }*/
 }
 
 
