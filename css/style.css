@@ -15,7 +15,7 @@ a {
 
 h1,
 h2,
-h3, 
+h3,
 h4 {
     text-align: center;
     margin: 2% 0% 3% 0%;
@@ -134,19 +134,32 @@ button {
     animation-duration: 200ms;
 }
 
-.header {
-    z-index: 100;
+.header-container {
     background-color: #2496EF;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    box-shadow: 9px 5px 10px -5px #808386;
+}
+
+.header-logo {
+    width: 0;
+}
+
+.header {
+
+    background-color: inherit;
     height: 70px;
     width: 100%;
-    position: fixed;
-    box-shadow: 9px 5px 10px -5px #aaafb3;
+    /*box-shadow: 9px 5px 10px -5px #aaafb3;*/
 }
 
 .headerbtn {
     width: 24%;
     height: 100%;
-    background-color: #2496EF;
+    background-color: inherit;
     border: none;
     color: white;
     font-size: 16px;
@@ -154,10 +167,8 @@ button {
 }
 
 .headerbtn:hover {
-    background-color: white;
-    color: #2496EF;
-    animation-name: fade-in;
-    animation-duration: 500ms;
+    /* animation: ease-in fade-in 250ms; */
+    border-bottom: 3px solid #e9f1f2;            
 }
 
 .headerlink {
@@ -169,10 +180,10 @@ button {
 }
 
 .logo-container {
-   
-        background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../media/images/bground.jpg');
-        background-size: cover;
-    
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/images/bground.jpg');
+    background-size: cover;
+
     width: 100%;
 }
 
@@ -221,9 +232,9 @@ button {
 }
 
 .intro {
-   /* color: #3f4142;*/
-   color: white;
-   padding: 1%;
+    /* color: #3f4142;*/
+    color: white;
+    padding: 1%;
 }
 
 .placeholder {
@@ -370,33 +381,50 @@ tr {
 }
 
 #projects img {
-    filter: brightness(70%);
+    filter: brightness(90%);
 }
 
 #projects img:hover {
     filter: brightness(100%);
-    animation-name: fade-in;
-    animation-duration: 500ms;
+    animation: fade-in 0.2s ease-in;
+   /* animation-duration: 500ms;*/
 }
-
+/*FOR LARGE SCREEN DEVICES*/
 
 @media only screen and (min-width: 768px) {
-    .logo-container{
-        background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../media/images/bground.jpg');
+    .logo-container {       
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/images/bgroundflipped2.jpg');
         background-size: cover;
     }
 
-    .description{
+    .header-logo {
+        width: 60%;
+
+    }
+
+    .h-l {
+        content: url("../media/images/logo.png");
+        border-radius: 100%;        
+        height: 80%;
+        padding: 1%;
+    }
+
+    .header {
+        width: 40%;
+    }
+
+    .description {
+        width: 40%;
         margin-top: 10%;
     }
-    
+
     .logo-inner {
         visibility: inherit;
         display: flex;
         margin: 0% 2% 0% 2%;
     }
 
-    .logo {        
+    .logo {
         width: 35%;
         height: 35%;
         padding: 5% 0% 5% 0%;
@@ -404,8 +432,9 @@ tr {
 
     .intro {
         color: white;
+        font-size: x-large;
     }
-         
+
     .card {
         margin: 1% 2% 2% 2%;
         padding: 2% 0% 3% 0%;
@@ -420,14 +449,8 @@ tr {
         border-radius: 5px;
     }
 
-    .description {
-        width: 25%;
-        margin-top: 10%;
-    }
-
     .projects {
         display: flex;
     }
-
 
 }
