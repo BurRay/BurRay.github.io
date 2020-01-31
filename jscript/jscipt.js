@@ -65,3 +65,16 @@ function SwitchToLogo()
     mylogo.style.display ="inline-block";
 }
 
+
+function AnimateLogo(){
+    var logo = document.getElementById("logo");
+    var description = document.getElementById("description");
+  
+    logo.style.visibility = "visible";     
+}
+
+window.onload = function(){
+  
+}
+
+//setTimeout(AnimateLogo, 2000);
