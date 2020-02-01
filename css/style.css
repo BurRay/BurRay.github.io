@@ -393,7 +393,7 @@ tr {
 
 @media only screen and (min-width: 768px) {
     .logo-container {       
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/images/bgroundflipped2.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/images/bgroundflipped.jpg');
         background-size: cover;
     }
 
