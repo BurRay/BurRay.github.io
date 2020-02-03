@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
     padding: 0%;
     margin: 0%;
@@ -197,7 +198,7 @@ button {
 }
 
 #about {
-    background-color: white;
+    background-color: azure;
     padding: 1% 0% 5% 0%;
 }
 
@@ -303,7 +304,7 @@ button {
 }
 
 .view {
-    height: 35px;
+    height: 40px;
     width: 80px;
     background-color: transparent;
     font-size: 16px;
@@ -325,7 +326,7 @@ button {
 }
 
 .downloadbtn {
-    height: 35px;
+    height: 40px;
     width: 120px;
     color: #2496EF;
     border-color: #2496EF;
@@ -393,7 +394,7 @@ tr {
 
 @media only screen and (min-width: 768px) {
     .logo-container {       
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/images/bgroundflipped2.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../media/images/bgroundflipped.jpg');
         background-size: cover;
     }
 
