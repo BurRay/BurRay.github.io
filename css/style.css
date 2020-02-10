@@ -167,15 +167,19 @@ button {
     font-weight: bold;
 }
 
-.headerbtn:hover {
-    /* animation: ease-in fade-in 250ms; */
+/* .headerbtn:hover {
+    animation: ease-in animate-up 250ms; 
     border-bottom: 3px solid #e9f1f2;            
+} */
+
+.current-section{
+    border-bottom: 3px solid #e9f1f2;
 }
 
 .headerlink {
     color: white;
 }
-
+                                                    
 .placeholder-container {
     text-align: center;
 }
@@ -247,7 +251,10 @@ button {
 
 .listing {
     text-align: left;
+}
 
+.listing li{
+    padding-bottom: 3%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -261,7 +268,7 @@ button {
 
 
 .skills {
-    color: #009cb8;
+    color: royalblue;
 }
 
 .projects {
@@ -293,7 +300,8 @@ button {
 }
 
 #resume {
-    padding: 4% 0% 4% 0%;
+    text-align: center;
+    padding: 1% 0% 4% 0%;
     z-index: 10;
     background-color: white;
 }
@@ -395,6 +403,10 @@ tr {
     animation: fade-in 0.2s ease-in;
    /* animation-duration: 500ms;*/
 }
+
+
+
+
 /*FOR LARGE SCREEN DEVICES*/
 
 @media only screen and (min-width: 768px) {
@@ -439,6 +451,15 @@ tr {
     .intro {
         color: white;
         font-size: x-large;
+    }
+
+    .info-container{
+        display: flex;
+    }
+
+    #about, #resume{
+        width: 50%;
+        text-align: center;
     }
 
     .card {

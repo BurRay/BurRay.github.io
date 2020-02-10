@@ -17,6 +17,7 @@ function Sticknavbar()
 //object.addEventListener ("scroll", onScrollHandler);
 
 window.onscroll = function () {
+    this.StyleHeader();
     //this.SwitchToAvatar();
 }
 
@@ -76,5 +77,50 @@ function AnimateLogo(){
 window.onload = function(){
   
 }
+
+
+//Lord, forgive me for this abomination. I'll fix it after finishing the JS course
+function StyleHeader(){
+    var headertop = document.getElementById("header").offsetTop - 70;
+    var resume = document.getElementById("resume").offsetTop - 70;
+    var projects = document.getElementById("projects").offsetTop - 70;;
+    var contact = document.getElementById("contact");
+
+    var qq = contact.offsetTop - (  projects - 300 );
+    
+    if (window.pageYOffset >= headertop) {
+        document.getElementById("a").classList.add("current-section");
+        document.getElementById("r").classList.remove("current-section");
+        document.getElementById("r").classList.remove("current-section");
+        document.getElementById("c").classList.remove("current-section");
+    }
+
+    if (window.pageYOffset >= resume) {    
+       document.getElementById("r").classList.add("current-section"); 
+       document.getElementById("a").classList.remove("current-section"); 
+       document.getElementById("p").classList.remove("current-section");
+       document.getElementById("c").classList.remove("current-section");
+    }     
+    if(window.pageYOffset >= projects){
+        document.getElementById("p").classList.add("current-section");
+        document.getElementById("a").classList.remove("current-section");  
+        document.getElementById("r").classList.remove("current-section");
+        document.getElementById("c").classList.remove("current-section");
+    }
+    if(window.pageYOffset >= contact.offsetTop - (  projects - 300 )){       
+        document.getElementById("c").classList.add("current-section");
+        document.getElementById("a").classList.remove("current-section");  
+        document.getElementById("r").classList.remove("current-section");
+        document.getElementById("p").classList.remove("current-section");
+        // alert(window.pageYOffset  + " " + projects +  " " + contact.offsetTop + " " + qq  ) ;
+    }   
+}
+
+
+
+
+
+
+
 
 //setTimeout(AnimateLogo, 2000);
