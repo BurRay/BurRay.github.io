@@ -8,6 +8,13 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body,
@@ -43,10 +50,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 1;
-}
-
-#avatar {
-  filter: blur(0);
 }
 
 nav {
