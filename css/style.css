@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   margin: 0;
@@ -97,4 +101,9 @@ main {
   background-color: white;
   border-radius: 5px;
   z-index: 2;
+}
+
+.card-anchor-link {
+  position: relative;
+  top: -70px;
 }
