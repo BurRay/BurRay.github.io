@@ -13,5 +13,4 @@ document.addEventListener('scroll', function (e) {
   nav.style.width = widthCount + '%';
   nav.style.borderRadius = radiusCount + 'px';
   header.style.filter = 'blur(' + offset / 100 + 'px)';
-  console.log(header.style.filter);
 });
