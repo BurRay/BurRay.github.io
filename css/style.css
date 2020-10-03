@@ -6,6 +6,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
@@ -83,6 +87,65 @@ nav {
   text-align-last: center;
   text-decoration: none;
   color: black;
+}
+
+#active {
+  padding: 0 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 95%;
+  height: 3px;
+  /* background-color: rgba(255, 0, 0, 0.151); */
+}
+
+.indicator {
+  display: flex;
+  width: 20%;
+  transition: 300ms ease;
+  position: absolute;
+}
+
+#active-indicator {
+  display: inline-block;
+  /* background-color: blue; */
+  width: 20%;
+  height: 3px;
+  order: 1;
+  border-radius: 10px;
+}
+
+#active span:nth-child(2) {
+  order: 2;
+}
+
+#active span:nth-child(3) {
+  order: 3;
+}
+
+#active span:nth-child(4) {
+  order: 4;
+}
+
+.indicator[data-order='1'] {
+  left: 4%;
+  background-color: red;
+}
+
+.indicator[data-order='2'] {
+  left: 28%;
+  background-color: blue;
+}
+
+.indicator[data-order='3'] {
+  left: 52%;
+  background-color: green;
+}
+
+.indicator[data-order='4'] {
+  left: 75%;
+  background-color: purple;
 }
 
 h2#name {
