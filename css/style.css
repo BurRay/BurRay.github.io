@@ -55,6 +55,20 @@ nav {
   max-width: 100%;
 }
 
+.nav-links {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: inline-block;
+  width: 25%;
+  text-align-last: center;
+  text-decoration: none;
+  color: black;
+}
+
 h2#name {
   text-align: center;
   display: block;
