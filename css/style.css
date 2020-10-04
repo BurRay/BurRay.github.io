@@ -46,7 +46,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../media/images/mobilebground.png');
+  background-image: url('../media/images/mobilebground.jpg');
   background-position: center;
   background-size: auto;
   width: 100%;
@@ -130,22 +130,22 @@ nav {
 
 .indicator[data-order='1'] {
   left: 4%;
-  background-color: red;
+  background-color: #047dff;
 }
 
 .indicator[data-order='2'] {
   left: 28%;
-  background-color: blue;
+  background-color: red;
 }
 
 .indicator[data-order='3'] {
   left: 52%;
-  background-color: green;
+  background-color: purple;
 }
 
 .indicator[data-order='4'] {
   left: 75%;
-  background-color: purple;
+  background-color: brown;
 }
 
 h2#name {

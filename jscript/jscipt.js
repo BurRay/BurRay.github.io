@@ -1,7 +1,7 @@
 var nav = document.getElementById('nav');
 var upperBound = 100;
 var lowerBound = 95;
-var header = document.getElementById('header');
+var header = document.getElementById('avatar');
 var navTop = parseInt(window.getComputedStyle(nav, null).marginTop);
 var navRadius = parseInt(window.getComputedStyle(nav, null).borderRadius);
 
@@ -28,8 +28,6 @@ function changeOrder() {
 
   for (const slide of allIndicators) {
     const order = slide.getAttribute('data-order');
-
-    console.log({ order });
 
     switch (order) {
       case one:
