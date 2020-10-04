@@ -12,7 +12,8 @@ document.addEventListener('scroll', function (e) {
   var radiusCount = navRadius - offset * tickValue;
   nav.style.width = widthCount + '%';
   nav.style.borderRadius = radiusCount + 'px';
-  header.style.filter = 'blur(' + offset / 100 + 'px)';
+  //.style.filter = 'blur(' + offset / 100 + 'px)';
+  // header.style.filter = 'opacity(' + radiusCount / offset + ')';
 });
 
 /////////////////////////////////  https://codepen.io/neiya/pen/VwLqQPO?editors=1010

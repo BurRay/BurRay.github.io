@@ -26,7 +26,7 @@ html {
 
 header {
   -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
+  -webkit-perspective: 1000px;
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transform: translateZ(0);
   backface-visibility: hidden;
