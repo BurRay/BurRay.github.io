@@ -1,7 +1,7 @@
 var nav = document.getElementById('nav');
 var upperBound = 100;
 var lowerBound = 95;
-var header = document.getElementById('avatar');
+var header = document.getElementById('header');
 var navTop = parseInt(window.getComputedStyle(nav, null).marginTop);
 var navRadius = parseInt(window.getComputedStyle(nav, null).borderRadius);
 
