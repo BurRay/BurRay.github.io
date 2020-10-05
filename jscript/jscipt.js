@@ -75,7 +75,7 @@ function changeOrder(index) {
       var anchorID = anchorsArray[i].getAttribute('href');
       var anchorIndex = anchorsArray[i].getAttribute('data-order');
       var sectionHeight = sectionsArray[i].offsetHeight;
-      var sectionTop = sectionsArray[i].offsetTop + (sectionHeight - 10);
+      var sectionTop = sectionsArray[i].offsetTop + sectionHeight - 20;
       if (
         scrollPosition >= sectionTop &&
         scrollPosition < sectionTop + sectionHeight
