@@ -123,22 +123,46 @@ nav {
 
 .indicator[data-order='1'] {
   left: 4%;
-  background-color: #047dff;
+  background: rgb(255, 141, 55);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 141, 55, 1) 0%,
+    rgba(4, 125, 255, 1) 51%,
+    rgba(255, 104, 104, 1) 100%
+  );
 }
 
 .indicator[data-order='2'] {
   left: 28%;
-  background-color: red;
+  background: rgb(249, 255, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 255, 101, 1) 0%,
+    rgba(4, 125, 255, 1) 44%,
+    rgba(255, 85, 131, 1) 86%
+  );
 }
 
 .indicator[data-order='3'] {
   left: 52%;
-  background-color: purple;
+  background: rgb(255, 56, 90);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 56, 90, 1) 0%,
+    rgba(4, 125, 255, 1) 44%,
+    rgba(236, 85, 255, 1) 86%
+  );
 }
 
 .indicator[data-order='4'] {
   left: 75%;
-  background-color: brown;
+  background: rgb(101, 255, 163);
+  background: linear-gradient(
+    90deg,
+    rgba(101, 255, 163, 1) 0%,
+    rgba(4, 125, 255, 1) 44%,
+    rgba(255, 85, 131, 1) 86%
+  );
 }
 
 h2#name {
@@ -156,7 +180,7 @@ main {
 .card {
   margin: 10px auto;
   width: 94%;
-  height: 250px;
+  height: 300px;
   background-color: white;
   border-radius: 5px;
   z-index: 2;
