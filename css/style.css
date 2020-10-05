@@ -96,13 +96,12 @@ nav {
 .indicator {
   display: flex;
   width: 20%;
-  transition: 300ms ease;
+  transition: left 250ms ease;
   position: absolute;
 }
 
 #active-indicator {
   display: inline-block;
-  /* background-color: blue; */
   width: 20%;
   height: 3px;
   order: 1;
