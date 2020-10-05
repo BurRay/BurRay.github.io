@@ -18,30 +18,33 @@ document.addEventListener('scroll', function (e) {
 
 /////////////////////////////////  https://codepen.io/neiya/pen/VwLqQPO?editors=1010
 
-setInterval(changeOrder, 2000);
+//setInterval(changeOrder, 2000);
 
-function changeOrder() {
+function changeOrder(index) {
   const allIndicators = document.querySelectorAll('.indicator');
-  const one = '1';
+  /*const one = '1';
   const two = '2';
   const three = '3';
-  const four = '4';
+  const four = '4';*/
 
   for (const slide of allIndicators) {
-    const order = slide.getAttribute('data-order');
-
+    //const order = slide.getAttribute('data-order');
+    const order = index;
     switch (order) {
-      case one:
-        slide.setAttribute('data-order', two);
+      case '0':
+        slide.setAttribute('data-order', 1);
         break;
-      case two:
-        slide.setAttribute('data-order', three);
+      case '1':
+        slide.setAttribute('data-order', 2);
         break;
-      case three:
-        slide.setAttribute('data-order', four);
+      case '2':
+        slide.setAttribute('data-order', 3);
         break;
-      case four:
-        slide.setAttribute('data-order', one);
+      case '3':
+        slide.setAttribute('data-order', 4);
+        break;
+      case '4':
+        slide.setAttribute('data-order', 0);
         break;
     }
   }
@@ -60,12 +63,10 @@ function changeOrder() {
   }
   window.onscroll = function () {
     //checks if user is at the bottom of page
-    var endOfPage =
+    var bottomOfPage =
       window.innerHeight + window.pageYOffset >= document.body.offsetHeight
         ? true
         : false;
-
-    //console.log({ endOfPage });
 
     //
     var scrollPosition = window.pageYOffset;
@@ -82,13 +83,13 @@ function changeOrder() {
         document
           .querySelector('nav a[href="' + anchorID + '"]')
           .classList.add('active');
-        console.log({ anchorIndex });
-        return anchorIndex;
-      } else {
-        document
-          .querySelector('nav a[href="' + anchorID + '"]')
-          .classList.remove('active');
-        if (endOfPage == true) {
+        changeOrder(anchorIndex);
+        //RemoveIndicator();
+        if (bottomOfPage) {
+          document
+            .querySelector('nav a[href="' + anchorID + '"]')
+            .classList.remove('active');
+        } else {
           document
             .querySelector('nav a[href="' + anchorID + '"]')
             .classList.remove('active');
@@ -98,5 +99,17 @@ function changeOrder() {
     // console.log({ scrollPosition }, { sectionTop }, { sectionHeight });
   };
 })();
+
+function PagePosition() {
+  var topOfPage;
+  //var bottomOfPage;
+
+  window.pageYOffset < 250 &&
+    (topOfPage = document
+      .getElementById('active-indicator')
+      .setAttribute('data-order', 0));
+}
+
+window.addEventListener('scroll', PagePosition);
 
 ///////////////////////
