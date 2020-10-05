@@ -46,3 +46,57 @@ function changeOrder() {
     }
   }
 }
+
+//https://stackoverflow.com/questions/44902920/how-is-the-active-class-added-to-the-correct-nav-item-inside-scroll-my-event
+
+(function () {
+  var anchorsArray = document.querySelectorAll('nav a');
+  var sections = document.querySelectorAll('.card');
+  var sectionsArray = [];
+  // Collect all sections and push to sectionsArray
+  for (var i = 0; i < sections.length; i++) {
+    var section = sections[i];
+    sectionsArray.push(section);
+  }
+  window.onscroll = function () {
+    //checks if user is at the bottom of page
+    var endOfPage =
+      window.innerHeight + window.pageYOffset >= document.body.offsetHeight
+        ? true
+        : false;
+
+    //console.log({ endOfPage });
+
+    //
+    var scrollPosition = window.pageYOffset;
+    for (var i = 0; i < anchorsArray.length; i++) {
+      // Get hrefs from each anchor
+      var anchorID = anchorsArray[i].getAttribute('href');
+      var anchorIndex = anchorsArray[i].getAttribute('data-order');
+      var sectionHeight = sectionsArray[i].offsetHeight;
+      var sectionTop = sectionsArray[i].offsetTop + sectionHeight + 25;
+      if (
+        scrollPosition >= sectionTop &&
+        scrollPosition < sectionTop + sectionHeight
+      ) {
+        document
+          .querySelector('nav a[href="' + anchorID + '"]')
+          .classList.add('active');
+        console.log({ anchorIndex });
+        return anchorIndex;
+      } else {
+        document
+          .querySelector('nav a[href="' + anchorID + '"]')
+          .classList.remove('active');
+        if (endOfPage == true) {
+          document
+            .querySelector('nav a[href="' + anchorID + '"]')
+            .classList.remove('active');
+        }
+      }
+    }
+    // console.log({ scrollPosition }, { sectionTop }, { sectionHeight });
+  };
+})();
+
+///////////////////////

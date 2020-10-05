@@ -166,3 +166,12 @@ main {
   position: relative;
   top: -70px;
 }
+
+.active {
+  color: red;
+}
+
+/* .card:first-child,
+.nav-link:first-child {
+  display: none;
+} */
