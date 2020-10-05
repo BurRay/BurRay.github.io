@@ -12,7 +12,7 @@ document.addEventListener('scroll', function (e) {
   var radiusCount = navRadius - offset * tickValue;
   nav.style.width = widthCount + '%';
   nav.style.borderRadius = radiusCount + 'px';
-  //.style.filter = 'blur(' + offset / 100 + 'px)';
+  header.style.filter = 'blur(' + offset / 100 + 'px)';
   // header.style.filter = 'opacity(' + radiusCount / offset + ')';
 });
 
@@ -75,7 +75,7 @@ function changeOrder(index) {
       var anchorID = anchorsArray[i].getAttribute('href');
       var anchorIndex = anchorsArray[i].getAttribute('data-order');
       var sectionHeight = sectionsArray[i].offsetHeight;
-      var sectionTop = sectionsArray[i].offsetTop + sectionHeight + 25;
+      var sectionTop = sectionsArray[i].offsetTop + (sectionHeight - 10);
       if (
         scrollPosition >= sectionTop &&
         scrollPosition < sectionTop + sectionHeight
