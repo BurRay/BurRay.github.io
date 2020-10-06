@@ -91,12 +91,13 @@ function changeOrder(index) {
         if (bottomOfPage) {
           document
             .querySelector('nav a[href="' + anchorID + '"]')
-            .classList.remove('active');
-        } else {
-          document
-            .querySelector('nav a[href="' + anchorID + '"]')
-            .classList.remove('active');
+            .classList.add('active');
+          console.log(bottomOfPage, { anchorID });
         }
+      } else {
+        document
+          .querySelector('nav a[href="' + anchorID + '"]')
+          .classList.remove('active');
       }
     }
     // console.log({ scrollPosition }, { sectionTop }, { sectionHeight });
