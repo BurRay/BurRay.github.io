@@ -17,7 +17,7 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: #e8e8e8;
+  background-color: #f5f9fb;
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Open Sans', sans-serif; */
   /* font-family: 'Sansita Swashed', cursive; */
@@ -38,7 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../media/images/mobilebground.jpg');
+  background-image: url('../media/images/cloth.jpg');
   background-position: center;
   background-size: auto;
   width: 100%;
@@ -183,6 +183,7 @@ main {
   background-color: white;
   border-radius: 5px;
   z-index: 2;
+  box-shadow: 0 10px 20px 0 rgba(0, 25, 50, 0.05);
 }
 
 .card-anchor-link {
@@ -191,7 +192,7 @@ main {
 }
 
 .active {
-  color: #047dff;
+  /* color: #047dff; */
 }
 
 /* .card:first-child,
